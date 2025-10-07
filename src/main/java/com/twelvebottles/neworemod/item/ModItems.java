@@ -15,6 +15,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SABLONIUM_INGOT = ITEMS.register("sablonium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_SABLONIUM = ITEMS.register("raw_sablonium",
+            () -> new Item(new Item.Properties()));
 
 
 

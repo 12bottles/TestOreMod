@@ -2,8 +2,16 @@
   "creativetab.neworemod.sablonium_items": "Sablonium Items",
   "creativetab.neworemod.sablonium_blocks": "Sablonium Blocks",
 
+  "item.neworemod.sablonium_ingot": "Sablonium Ingot",
+  "item.neworemod.raw_sablonium": "Raw Sablonium",
+
   "block.neworemod.sablonium_ore": "Sablonium Ore",
   "block.neworemod.sablonium_deepslate_ore": "Sablonium Deepslate Ore",
+
+  "block.neworemod.sablonium_block": "Sablonium Block",
+  "block.neworemod.raw_sablonium_block": "Raw Sablonium Block",
+
+  "block.neworemod.sablonium_bricks": "Sablonium Bricks",
 
 
 

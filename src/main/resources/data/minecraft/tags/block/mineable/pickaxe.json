@@ -4,6 +4,11 @@
     "neworemod:alexandrite_block",
     "neworemod:raw_alexandrite_block",
     "neworemod:alexandrite_ore",
-    "neworemod:alexandrite_deepslate_ore"
+    "neworemod:alexandrite_deepslate_ore",
+    "neworemod:sablonium_block",
+    "neworemod:raw_sablonium_block",
+    "neworemod:sablonium_ore",
+    "neworemod:sablonium_deepslate_ore",
+    "neworemod:sablonium_bricks"
   ]
 }

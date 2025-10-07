@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "neworemod:alexandrite_block",
-    "neworemod:raw_alexandrite_block"
+    "neworemod:raw_alexandrite_block",
+    "neworemod:sablonium_block",
+    "neworemod:raw_sablonium_block"
   ]
 }

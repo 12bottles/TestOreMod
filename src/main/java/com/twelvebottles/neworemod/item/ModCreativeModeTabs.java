@@ -17,21 +17,24 @@ public class ModCreativeModeTabs {
     // Sablonium Tabs
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_ITEMS_TAB = CREATIVE_MODE_TABS.register("sablonium_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SABLONIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.neworemod.sablonium_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ALEXANDRITE.get());
-                        output.accept(ModItems.RAW_ALEXANDRITE.get());
+                        output.accept(ModItems.SABLONIUM_INGOT.get());
+                        output.accept(ModItems.RAW_SABLONIUM.get());
 
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_BLOCKS_TAB = CREATIVE_MODE_TABS.register("sablonium_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ALEXANDRITE_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.SABLONIUM_BLOCK.get()))
                     .withTabsBefore(SABLONIUM_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.neworemod.sablonium_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.SABLONIUM_ORE.get());
                         output.accept(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.SABLONIUM_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SABLONIUM_BLOCK.get());
+                        output.accept(ModBlocks.SABLONIUM_BRICKS.get());
 
                     }).build());
 

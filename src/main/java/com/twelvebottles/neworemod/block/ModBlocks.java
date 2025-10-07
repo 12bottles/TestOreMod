@@ -26,7 +26,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> SABLONIUM_DEEPSLATE_ORE = registerBlock("sablonium_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> SABLONIUM_BLOCK = registerBlock("sablonium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final RegistryObject<Block> RAW_SABLONIUM_BLOCK = registerBlock("raw_sablonium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> SABLONIUM_BRICKS = registerBlock("sablonium_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
 
 
