@@ -1,0 +1,21 @@
+{
+  "creativetab.neworemod.sablonium_items": "Sablonium Items",
+  "creativetab.neworemod.sablonium_blocks": "Sablonium Blocks",
+
+  "block.neworemod.sablonium_ore": "Sablonium Ore",
+  "block.neworemod.sablonium_deepslate_ore": "Sablonium Deepslate Ore",
+
+
+
+
+  "item.neworemod.alexandrite": "Alexandrite Gem",
+  "item.neworemod.raw_alexandrite": "Raw Alexandrite",
+
+  "block.neworemod.alexandrite_block": "Block of Alexandrite",
+  "block.neworemod.raw_alexandrite_block": "Block of Raw Alexandrite",
+  "block.neworemod.alexandrite_ore": "Alexandrite Ore",
+  "block.neworemod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+
+  "creativetab.neworemod.alexandrite_items": "Alexandrite Items",
+  "creativetab.neworemod.alexandrite_blocks": "Alexandrite Blocks"
+}

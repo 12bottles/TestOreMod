@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "neworemod:alexandrite_block",
+    "neworemod:raw_alexandrite_block",
+    "neworemod:alexandrite_ore",
+    "neworemod:alexandrite_deepslate_ore"
+  ]
+}
