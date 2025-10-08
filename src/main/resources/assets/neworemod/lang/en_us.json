@@ -1,6 +1,7 @@
 {
   "creativetab.neworemod.sablonium_items": "Sablonium Items",
   "creativetab.neworemod.sablonium_blocks": "Sablonium Blocks",
+  "creativetab.neworemod.sablonium_misc": "Sablonium Misc.",
 
   "item.neworemod.sablonium_ingot": "Sablonium Ingot",
   "item.neworemod.raw_sablonium": "Raw Sablonium",
@@ -12,6 +13,25 @@
   "block.neworemod.raw_sablonium_block": "Raw Sablonium Block",
 
   "block.neworemod.sablonium_bricks": "Sablonium Bricks",
+
+  "block.neworemod.sablonium_stairs": "Sablonium Stairs",
+  "block.neworemod.sablonium_slab": "Sablonium Slab",
+
+  "block.neworemod.sablonium_button": "Sablonium Button",
+  "block.neworemod.sablonium_pressure_plate": "Sablonium Pressure Plate",
+
+  "block.neworemod.sablonium_fence": "Sablonium Fence",
+  "block.neworemod.sablonium_fence_gate": "Sablonium Fence Gate",
+  "block.neworemod.sablonium_wall": "Sablonium Wall",
+
+  "block.neworemod.sablonium_door": "Sablonium Door",
+  "block.neworemod.sablonium_trapdoor": "Sablonium Trapdoor",
+
+
+  "block.neworemod.transmutator": "Transmutator",
+
+  "tooltip.neworemod.transmutator.tooltip": "if you're reading this, the tooltips are working!",
+
 
 
 

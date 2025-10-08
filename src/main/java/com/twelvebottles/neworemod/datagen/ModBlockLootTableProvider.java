@@ -32,11 +32,30 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SABLONIUM_BRICKS.get());
         dropSelf(ModBlocks.RAW_SABLONIUM_BLOCK.get());
 
+        dropSelf(ModBlocks.TRANSMUTATOR.get());
+
         this.add(ModBlocks.SABLONIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.SABLONIUM_ORE.get(), ModItems.RAW_SABLONIUM.get()));
         this.add(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(
                         ModBlocks.SABLONIUM_DEEPSLATE_ORE.get(), ModItems.RAW_SABLONIUM.get(), 2, 5));
+
+        dropSelf(ModBlocks.SABLONIUM_STAIRS.get());
+        this.add(ModBlocks.SABLONIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SABLONIUM_SLAB.get()));
+
+        this.add(ModBlocks.SABLONIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SABLONIUM_DOOR.get()));
+
+
+        dropSelf(ModBlocks.SABLONIUM_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.SABLONIUM_BUTTON.get());
+
+        dropSelf(ModBlocks.SABLONIUM_FENCE.get());
+        dropSelf(ModBlocks.SABLONIUM_FENCE_GATE.get());
+        dropSelf(ModBlocks.SABLONIUM_WALL.get());
+
+        dropSelf(ModBlocks.SABLONIUM_TRAPDOOR.get());
     }
 
 

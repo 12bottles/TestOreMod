@@ -36,6 +36,27 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_SABLONIUM_BLOCK.get());
                         output.accept(ModBlocks.SABLONIUM_BRICKS.get());
 
+                        output.accept(ModBlocks.SABLONIUM_STAIRS.get());
+                        output.accept(ModBlocks.SABLONIUM_SLAB.get());
+
+                        output.accept(ModBlocks.SABLONIUM_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.SABLONIUM_BUTTON.get());
+
+                        output.accept(ModBlocks.SABLONIUM_FENCE.get());
+                        output.accept(ModBlocks.SABLONIUM_FENCE_GATE.get());
+                        output.accept(ModBlocks.SABLONIUM_WALL.get());
+
+                        output.accept(ModBlocks.SABLONIUM_DOOR.get());
+                        output.accept(ModBlocks.SABLONIUM_TRAPDOOR.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> SABLONIUM_MISC_TAB = CREATIVE_MODE_TABS.register("sablonium_misc_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TRANSMUTATOR.get()))
+                    .withTabsBefore(SABLONIUM_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.neworemod.sablonium_misc"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.TRANSMUTATOR.get());
+
                     }).build());
 
 
@@ -45,7 +66,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_ITEMS_TAB = CREATIVE_MODE_TABS.register("alexanderite_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
-                    .withTabsBefore(SABLONIUM_BLOCKS_TAB.getId())
+                    .withTabsBefore(SABLONIUM_MISC_TAB.getId())
                     .title(Component.translatable("creativetab.neworemod.alexandrite_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ALEXANDRITE.get());

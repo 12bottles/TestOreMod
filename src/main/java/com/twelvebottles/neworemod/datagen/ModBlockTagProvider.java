@@ -29,5 +29,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.RAW_SABLONIUM_BLOCK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.SABLONIUM_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.SABLONIUM_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.SABLONIUM_WALL.get());
     }
 }

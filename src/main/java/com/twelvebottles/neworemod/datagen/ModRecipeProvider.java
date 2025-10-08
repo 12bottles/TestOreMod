@@ -49,6 +49,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pRecipeOutput, SABLONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SABLONIUM_INGOT.get(), 0.25f, 200, "sablonium_ingot");
         oreBlasting(pRecipeOutput, SABLONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SABLONIUM_INGOT.get(), 0.25f, 100, "sablonium_ingot");
 
+        stairBuilder(ModBlocks.SABLONIUM_STAIRS.get(), Ingredient.of(ModItems.SABLONIUM_INGOT.get())).group("sablonium")
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SABLONIUM_SLAB.get(), ModItems.SABLONIUM_INGOT.get());
+
+        buttonBuilder(ModBlocks.SABLONIUM_BUTTON.get(), Ingredient.of(ModItems.SABLONIUM_INGOT.get())).group("sablonium")
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.SABLONIUM_PRESSURE_PLATE.get(), ModItems.SABLONIUM_INGOT.get());
+
+        fenceBuilder(ModBlocks.SABLONIUM_FENCE.get(), Ingredient.of(ModItems.SABLONIUM_INGOT.get())).group("sablonium")
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.SABLONIUM_FENCE_GATE.get(), Ingredient.of(ModItems.SABLONIUM_INGOT.get())).group("sablonium")
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SABLONIUM_WALL.get(), ModItems.SABLONIUM_INGOT.get());
+
+        doorBuilder(ModBlocks.SABLONIUM_DOOR.get(), Ingredient.of(ModItems.SABLONIUM_INGOT.get())).group("sablonium")
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.SABLONIUM_TRAPDOOR.get(), Ingredient.of(ModItems.SABLONIUM_INGOT.get())).group("sablonium")
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+
+
+
+
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
