@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "minecraft:block/deepslate",
-    "side": "neworemod:block/sablonium_deepslate_ore"
-  }
-}
