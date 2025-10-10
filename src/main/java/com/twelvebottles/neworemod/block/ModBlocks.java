@@ -1,6 +1,7 @@
 package com.twelvebottles.neworemod.block;
 
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.block.custom.SabloniumLampBlock;
 import com.twelvebottles.neworemod.block.custom.Transmutator;
 import com.twelvebottles.neworemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -71,6 +72,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> TRANSMUTATOR = registerBlock("transmutator",
             () -> new Transmutator(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> SABLONIUM_LAMP = registerBlock("sablonium_lamp",
+            () -> new SabloniumLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .lightLevel(state -> state.getValue(SabloniumLampBlock.CLICKED) ? 15 : 0)));
 
 
     // BUFFER ROOM

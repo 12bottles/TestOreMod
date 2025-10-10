@@ -2,6 +2,7 @@ package com.twelvebottles.neworemod.datagen;
 
 import com.twelvebottles.neworemod.NewOreMod;
 import com.twelvebottles.neworemod.block.ModBlocks;
+import com.twelvebottles.neworemod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -22,16 +23,30 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SABLONIUM_BLOCK.get())
                 .add(ModBlocks.RAW_SABLONIUM_BLOCK.get())
                 .add(ModBlocks.SABLONIUM_ORE.get())
-                .add(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get());
+                .add(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get())
+                .add(ModBlocks.SABLONIUM_BRICKS.get());
+
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SABLONIUM_ORE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.RAW_SABLONIUM_BLOCK.get());
+                .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
+
+
+        tag(ModTags.Blocks.NEEDS_SABLONIUM_TOOL)
+                .add(ModBlocks.RAW_SABLONIUM_BLOCK.get())
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_SABLONIUM_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_SABLONIUM_TOOL);
+
+
 
         tag(BlockTags.FENCES).add(ModBlocks.SABLONIUM_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.SABLONIUM_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.SABLONIUM_WALL.get());
+
     }
 }

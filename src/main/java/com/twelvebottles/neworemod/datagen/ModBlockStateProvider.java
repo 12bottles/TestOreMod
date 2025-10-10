@@ -2,9 +2,12 @@ package com.twelvebottles.neworemod.datagen;
 
 import com.twelvebottles.neworemod.NewOreMod;
 import com.twelvebottles.neworemod.block.ModBlocks;
+import com.twelvebottles.neworemod.block.custom.SabloniumLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -45,6 +48,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.SABLONIUM_PRESSURE_PLATE);
         blockItem(ModBlocks.SABLONIUM_FENCE_GATE);
         blockItem(ModBlocks.SABLONIUM_TRAPDOOR, "_bottom");
+
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.SABLONIUM_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(SabloniumLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("sablonium_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "block/" + "sablonium_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("sablonium_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "block/" + "sablonium_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.SABLONIUM_LAMP.get(), models().cubeAll("sablonium_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "block/" + "sablonium_lamp_on")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

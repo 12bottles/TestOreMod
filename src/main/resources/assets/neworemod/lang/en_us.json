@@ -6,6 +6,12 @@
   "item.neworemod.sablonium_ingot": "Sablonium Ingot",
   "item.neworemod.raw_sablonium": "Raw Sablonium",
 
+  "item.neworemod.sablonium_sword": "Sablonium Sword",
+  "item.neworemod.sablonium_pickaxe": "Sablonium Pickaxe",
+  "item.neworemod.sablonium_shovel": "Sablonium Shovel",
+  "item.neworemod.sablonium_axe": "Sablonium Axe",
+  "item.neworemod.sablonium_hoe": "Sablonium Hoe",
+
   "block.neworemod.sablonium_ore": "Sablonium Ore",
   "block.neworemod.sablonium_deepslate_ore": "Sablonium Deepslate Ore",
 
@@ -29,6 +35,9 @@
 
 
   "block.neworemod.transmutator": "Transmutator",
+  "block.neworemod.sablonium_lamp": "Sablonium Lamp",
+
+
 
   "tooltip.neworemod.transmutator.tooltip": "if you're reading this, the tooltips are working!",
 

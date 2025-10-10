@@ -33,6 +33,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_SABLONIUM_BLOCK.get());
 
         dropSelf(ModBlocks.TRANSMUTATOR.get());
+        dropSelf(ModBlocks.SABLONIUM_LAMP.get());
 
         this.add(ModBlocks.SABLONIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.SABLONIUM_ORE.get(), ModItems.RAW_SABLONIUM.get()));

@@ -23,6 +23,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SABLONIUM_INGOT.get());
                         output.accept(ModItems.RAW_SABLONIUM.get());
 
+
+                        output.accept(ModItems.SABLONIUM_SWORD.get());
+                        output.accept(ModItems.SABLONIUM_PICKAXE.get());
+                        output.accept(ModItems.SABLONIUM_AXE.get());
+                        output.accept(ModItems.SABLONIUM_SHOVEL.get());
+                        output.accept(ModItems.SABLONIUM_HOE.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_BLOCKS_TAB = CREATIVE_MODE_TABS.register("sablonium_blocks_tab",
@@ -36,11 +43,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_SABLONIUM_BLOCK.get());
                         output.accept(ModBlocks.SABLONIUM_BRICKS.get());
 
+
                         output.accept(ModBlocks.SABLONIUM_STAIRS.get());
                         output.accept(ModBlocks.SABLONIUM_SLAB.get());
-
-                        output.accept(ModBlocks.SABLONIUM_PRESSURE_PLATE.get());
-                        output.accept(ModBlocks.SABLONIUM_BUTTON.get());
 
                         output.accept(ModBlocks.SABLONIUM_FENCE.get());
                         output.accept(ModBlocks.SABLONIUM_FENCE_GATE.get());
@@ -48,6 +53,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.SABLONIUM_DOOR.get());
                         output.accept(ModBlocks.SABLONIUM_TRAPDOOR.get());
+                        output.accept(ModBlocks.SABLONIUM_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.SABLONIUM_BUTTON.get());
+
+
+                        output.accept(ModBlocks.SABLONIUM_LAMP.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_MISC_TAB = CREATIVE_MODE_TABS.register("sablonium_misc_tab",
@@ -63,7 +73,7 @@ public class ModCreativeModeTabs {
 
 
     // Alexandrite Tabs (placeholders)
-
+/*
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_ITEMS_TAB = CREATIVE_MODE_TABS.register("alexanderite_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
                     .withTabsBefore(SABLONIUM_MISC_TAB.getId())
@@ -86,7 +96,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
 
                     }).build());
-
+*/
 
 
     public static void register(IEventBus eventBus) {

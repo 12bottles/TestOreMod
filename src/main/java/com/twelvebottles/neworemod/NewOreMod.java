@@ -2,6 +2,7 @@ package com.twelvebottles.neworemod;
 
 import com.mojang.logging.LogUtils;
 import com.twelvebottles.neworemod.block.ModBlocks;
+import com.twelvebottles.neworemod.component.ModDataComponentTypes;
 import com.twelvebottles.neworemod.item.ModCreativeModeTabs;
 import com.twelvebottles.neworemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -41,6 +42,9 @@ public class NewOreMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
