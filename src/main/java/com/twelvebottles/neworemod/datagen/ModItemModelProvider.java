@@ -34,6 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SABLONIUM_AXE);
         handheldItem(ModItems.SABLONIUM_SHOVEL);
         handheldItem(ModItems.SABLONIUM_HOE);
+
+        handheldItem(ModItems.SABLONIUM_HAMMER);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

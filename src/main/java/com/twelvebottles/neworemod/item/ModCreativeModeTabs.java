@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SABLONIUM_SHOVEL.get());
                         output.accept(ModItems.SABLONIUM_HOE.get());
 
+                        output.accept(ModItems.SABLONIUM_HAMMER.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_BLOCKS_TAB = CREATIVE_MODE_TABS.register("sablonium_blocks_tab",
