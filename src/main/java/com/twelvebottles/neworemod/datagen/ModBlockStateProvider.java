@@ -3,9 +3,11 @@ package com.twelvebottles.neworemod.datagen;
 import com.twelvebottles.neworemod.NewOreMod;
 import com.twelvebottles.neworemod.block.ModBlocks;
 import com.twelvebottles.neworemod.block.custom.SabloniumLampBlock;
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -30,6 +32,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.TRANSMUTATOR);
 
+
+        blockWithItem(ModBlocks.SABLONIUM_CORE);
+
+
         stairsBlock(ModBlocks.SABLONIUM_STAIRS.get(), blockTexture(ModBlocks.SABLONIUM_BLOCK.get()));
         slabBlock(ModBlocks.SABLONIUM_SLAB.get(), blockTexture(ModBlocks.SABLONIUM_BLOCK.get()), blockTexture(ModBlocks.SABLONIUM_BLOCK.get()));
 
@@ -49,12 +55,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.SABLONIUM_FENCE_GATE);
         blockItem(ModBlocks.SABLONIUM_TRAPDOOR, "_bottom");
 
+
         customLamp();
     }
 
+
     private void customLamp() {
         getVariantBuilder(ModBlocks.SABLONIUM_LAMP.get()).forAllStates(state -> {
-            if(state.getValue(SabloniumLampBlock.CLICKED)) {
+            if (state.getValue(SabloniumLampBlock.CLICKED)) {
                 return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("sablonium_lamp_on",
                         ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "block/" + "sablonium_lamp_on")))};
             } else {
@@ -70,6 +78,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
+
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("neworemod:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
@@ -79,4 +88,5 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("neworemod:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
     }
+
 }

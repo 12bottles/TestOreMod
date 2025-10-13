@@ -24,11 +24,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_SABLONIUM_BLOCK.get())
                 .add(ModBlocks.SABLONIUM_ORE.get())
                 .add(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get())
-                .add(ModBlocks.SABLONIUM_BRICKS.get());
+                .add(ModBlocks.SABLONIUM_BRICKS.get())
+                .add(ModBlocks.SABLONIUM_CORE.get());
 
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.SABLONIUM_ORE.get());
+                .add(ModBlocks.SABLONIUM_ORE.get())
+                .add(ModBlocks.SABLONIUM_CORE.get())
+        ;
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
@@ -41,6 +44,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_SABLONIUM_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_SABLONIUM_TOOL);
+
+
 
 
 

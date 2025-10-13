@@ -65,6 +65,7 @@ public class ModCreativeModeTabs {
 
 
                         output.accept(ModBlocks.SABLONIUM_LAMP.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_MISC_TAB = CREATIVE_MODE_TABS.register("sablonium_misc_tab",
@@ -73,6 +74,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.neworemod.sablonium_misc"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.TRANSMUTATOR.get());
+                        output.accept(ModBlocks.SABLONIUM_CORE.get());
 
                     }).build());
 

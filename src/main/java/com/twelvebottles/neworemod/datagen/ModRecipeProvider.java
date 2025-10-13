@@ -69,14 +69,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SABLONIUM_CORE.get())
+                .pattern("CAC")
+                .pattern("ABA")
+                .pattern("CAC")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .define('B', Items.HEAVY_CORE)
+                .define('C', ModBlocks.SABLONIUM_BLOCK.get())
+                .unlockedBy(getHasName(Items.HEAVY_CORE), has(ModBlocks.SABLONIUM_BLOCK.get())).save(pRecipeOutput);
+
+
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SABLONIUM_HAMMER.get())
-                .pattern("  C")
-                .pattern(" B ")
+                .pattern("  B")
+                .pattern(" A ")
                 .pattern("A  ")
                 .define('A', Items.STICK)
-                .define('B', ModItems.SABLONIUM_INGOT.get())
-                .define('C', ModBlocks.SABLONIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+                .define('B', ModBlocks.SABLONIUM_CORE.get())
+                .unlockedBy(getHasName(ModBlocks.SABLONIUM_CORE.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
 
 
 

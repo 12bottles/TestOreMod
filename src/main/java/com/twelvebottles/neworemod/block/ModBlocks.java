@@ -77,6 +77,10 @@ public class ModBlocks {
             () -> new SabloniumLampBlock(BlockBehaviour.Properties.of().strength(2f)
                     .lightLevel(state -> state.getValue(SabloniumLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final RegistryObject<Block> SABLONIUM_CORE = registerBlock("sablonium_core",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(7f).requiresCorrectToolForDrops().sound(SoundType.HEAVY_CORE)));
+
 
     // BUFFER ROOM
 
