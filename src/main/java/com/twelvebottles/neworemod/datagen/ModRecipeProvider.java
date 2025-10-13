@@ -69,6 +69,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SABLONIUM_HAMMER.get())
+                .pattern("  C")
+                .pattern(" B ")
+                .pattern("A  ")
+                .define('A', Items.STICK)
+                .define('B', ModItems.SABLONIUM_INGOT.get())
+                .define('C', ModBlocks.SABLONIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
 
 
 

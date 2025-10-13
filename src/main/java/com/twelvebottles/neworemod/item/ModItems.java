@@ -38,8 +38,21 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTiers.SABLONIUM, 0, -3.0f))));
 
     public static final RegistryObject<Item> SABLONIUM_HAMMER = ITEMS.register("sablonium_hammer",
-            () -> new HammerItem(ModToolTiers.SABLONIUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SABLONIUM, 8, -3.5f))));
+            () -> new HammerItem(ModToolTiers.SABLONIUM_EXOTIC, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SABLONIUM_EXOTIC, 8, -3.5f))));
+
+    public static final RegistryObject<Item> SABLONIUM_HELMET = ITEMS.register("sablonium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
+    public static final RegistryObject<Item> SABLONIUM_CHESTPLATE = ITEMS.register("sablonium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(18))));
+    public static final RegistryObject<Item> SABLONIUM_LEGGINGS = ITEMS.register("sablonium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(18))));
+    public static final RegistryObject<Item> SABLONIUM_BOOTS = ITEMS.register("sablonium_boots",
+            () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
 
 
     public static void register(IEventBus eventBus) {

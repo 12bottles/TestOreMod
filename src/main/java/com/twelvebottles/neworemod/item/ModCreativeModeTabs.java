@@ -32,6 +32,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.SABLONIUM_HAMMER.get());
 
+                        output.accept(ModItems.SABLONIUM_HELMET.get());
+                        output.accept(ModItems.SABLONIUM_CHESTPLATE.get());
+                        output.accept(ModItems.SABLONIUM_LEGGINGS.get());
+                        output.accept(ModItems.SABLONIUM_BOOTS.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> SABLONIUM_BLOCKS_TAB = CREATIVE_MODE_TABS.register("sablonium_blocks_tab",
