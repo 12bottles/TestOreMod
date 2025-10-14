@@ -37,5 +37,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.SABLONIUM_LEGGINGS.get())
                 .add(ModItems.SABLONIUM_BOOTS.get());
 
+
     }
 }

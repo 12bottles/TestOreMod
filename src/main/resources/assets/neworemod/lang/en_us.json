@@ -12,6 +12,8 @@
   "item.neworemod.sablonium_axe": "Sablonium Axe",
   "item.neworemod.sablonium_hoe": "Sablonium Hoe",
 
+  "item.neworemod.chisel": "Chisel",
+
   "item.neworemod.sablonium_hammer": "Sablonium Hammer",
 
   "block.neworemod.sablonium_core": "Sablonium Core",
@@ -20,6 +22,8 @@
   "item.neworemod.sablonium_chestplate": "Sablonium Chestplate",
   "item.neworemod.sablonium_leggings": "Sablonium Leggings",
   "item.neworemod.sablonium_boots": "Sablonium Boots",
+
+  "item.neworemod.sablonium_horse_armor": "Sablonium Horse Armour",
 
   "block.neworemod.sablonium_ore": "Sablonium Ore",
   "block.neworemod.sablonium_deepslate_ore": "Sablonium Deepslate Ore",

@@ -48,6 +48,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SABLONIUM_INGOT.get());
         basicItem(ModItems.RAW_SABLONIUM.get());
 
+        basicItem(ModItems.SABLONIUM_HORSE_ARMOR.get());
+
         buttonItem(ModBlocks.SABLONIUM_BUTTON, ModBlocks.SABLONIUM_BLOCK);
         fenceItem(ModBlocks.SABLONIUM_FENCE, ModBlocks.SABLONIUM_BLOCK);
         wallItem(ModBlocks.SABLONIUM_WALL, ModBlocks.SABLONIUM_BLOCK);
@@ -61,6 +63,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SABLONIUM_HOE);
 
         handheldItem(ModItems.SABLONIUM_HAMMER);
+
+        // handheldItem(ModItems.CHISEL);
 
         trimmedArmorItem(ModItems.SABLONIUM_HELMET);
         trimmedArmorItem(ModItems.SABLONIUM_CHESTPLATE);

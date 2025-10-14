@@ -1,7 +1,9 @@
 package com.twelvebottles.neworemod.item;
 
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.item.custom.ChiselItem;
 import com.twelvebottles.neworemod.item.custom.HammerItem;
+import com.twelvebottles.neworemod.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,12 +39,15 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.SABLONIUM, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.SABLONIUM, 0, -3.0f))));
 
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
+
     public static final RegistryObject<Item> SABLONIUM_HAMMER = ITEMS.register("sablonium_hammer",
             () -> new HammerItem(ModToolTiers.SABLONIUM_EXOTIC, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.SABLONIUM_EXOTIC, 8, -3.5f))));
 
     public static final RegistryObject<Item> SABLONIUM_HELMET = ITEMS.register("sablonium_helmet",
-            () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
     public static final RegistryObject<Item> SABLONIUM_CHESTPLATE = ITEMS.register("sablonium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
@@ -54,6 +59,9 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
 
+    public static final RegistryObject<Item> SABLONIUM_HORSE_ARMOR = ITEMS.register("sablonium_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -5,6 +5,7 @@ import com.twelvebottles.neworemod.block.ModBlocks;
 import com.twelvebottles.neworemod.component.ModDataComponentTypes;
 import com.twelvebottles.neworemod.item.ModCreativeModeTabs;
 import com.twelvebottles.neworemod.item.ModItems;
+import com.twelvebottles.neworemod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -85,7 +86,7 @@ public class NewOreMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 

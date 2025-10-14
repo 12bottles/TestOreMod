@@ -32,10 +32,14 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.SABLONIUM_HAMMER.get());
 
+                        output.accept(ModItems.CHISEL.get());
+
                         output.accept(ModItems.SABLONIUM_HELMET.get());
                         output.accept(ModItems.SABLONIUM_CHESTPLATE.get());
                         output.accept(ModItems.SABLONIUM_LEGGINGS.get());
                         output.accept(ModItems.SABLONIUM_BOOTS.get());
+
+                        output.accept(ModItems.SABLONIUM_HORSE_ARMOR.get());
 
                     }).build());
 
