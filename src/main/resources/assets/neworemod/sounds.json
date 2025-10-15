@@ -1,0 +1,46 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.neworemod.chisel_use",
+    "sounds": [
+      "neworemod:chisel_use"
+    ]
+  },
+  "transmutator_break": {
+    "subtitle": "sounds.neworemod.transmutator_break",
+    "sounds": [
+      "neworemod:transmutator_break"
+    ]
+  },
+  "transmutator_step": {
+    "subtitle": "sounds.neworemod.transmutator_step",
+    "sounds": [
+      "neworemod:transmutator_step"
+    ]
+  },
+  "transmutator_place": {
+    "subtitle": "sounds.neworemod.transmutator_place",
+    "sounds": [
+      "neworemod:transmutator_place"
+    ]
+  },
+  "transmutator_hit": {
+    "subtitle": "sounds.neworemod.transmutator_hit",
+    "sounds": [
+      "neworemod:transmutator_hit"
+    ]
+  },
+  "transmutator_fall": {
+    "subtitle": "sounds.neworemod.transmutator_fall",
+    "sounds": [
+      "neworemod:transmutator_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "neworemod:bar_brawl",
+        "stream": true
+      }
+    ]
+  }
+}

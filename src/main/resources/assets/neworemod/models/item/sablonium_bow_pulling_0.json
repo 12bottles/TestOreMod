@@ -1,0 +1,6 @@
+{
+  "parent": "neworemod:item/sablonium_bow",
+  "textures": {
+    "layer0": "neworemod:item/sablonium_bow_pulling_0"
+  }
+}

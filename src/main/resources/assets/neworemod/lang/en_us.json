@@ -12,6 +12,8 @@
   "item.neworemod.sablonium_axe": "Sablonium Axe",
   "item.neworemod.sablonium_hoe": "Sablonium Hoe",
 
+  "item.neworemod.sablonium_bow": "Sablonium Bow",
+
   "item.neworemod.chisel": "Chisel",
 
   "item.neworemod.sablonium_hammer": "Sablonium Hammer",
@@ -24,6 +26,9 @@
   "item.neworemod.sablonium_boots": "Sablonium Boots",
 
   "item.neworemod.sablonium_horse_armor": "Sablonium Horse Armour",
+
+  "item.neworemod.bar_brawl_music_disc": "Music Disc (TEMP)",
+  "item.neworemod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "block.neworemod.sablonium_ore": "Sablonium Ore",
   "block.neworemod.sablonium_deepslate_ore": "Sablonium Deepslate Ore",
@@ -51,8 +56,14 @@
   "block.neworemod.sablonium_lamp": "Sablonium Lamp",
 
 
+  "effect.neworemod.slimey": "Slimey",
 
-  "tooltip.neworemod.transmutator.tooltip": "if you're reading this, the tooltips are working!",
+
+
+
+  "tooltip.neworemod.transmutator.tooltip": "Try throwing something on top of me!",
+
+
 
 
 

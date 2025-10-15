@@ -50,6 +50,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.SABLONIUM_HORSE_ARMOR.get());
 
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
         buttonItem(ModBlocks.SABLONIUM_BUTTON, ModBlocks.SABLONIUM_BLOCK);
         fenceItem(ModBlocks.SABLONIUM_FENCE, ModBlocks.SABLONIUM_BLOCK);
         wallItem(ModBlocks.SABLONIUM_WALL, ModBlocks.SABLONIUM_BLOCK);

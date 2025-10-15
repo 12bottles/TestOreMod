@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SABLONIUM_SHOVEL.get());
                         output.accept(ModItems.SABLONIUM_HOE.get());
 
+                        output.accept(ModItems.SABLONIUM_BOW.get());
+
                         output.accept(ModItems.SABLONIUM_HAMMER.get());
 
                         output.accept(ModItems.CHISEL.get());
@@ -78,7 +80,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.neworemod.sablonium_misc"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.TRANSMUTATOR.get());
+
                         output.accept(ModBlocks.SABLONIUM_CORE.get());
+
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
                     }).build());
 

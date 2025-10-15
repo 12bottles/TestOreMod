@@ -4,6 +4,7 @@ import com.twelvebottles.neworemod.NewOreMod;
 import com.twelvebottles.neworemod.item.custom.ChiselItem;
 import com.twelvebottles.neworemod.item.custom.HammerItem;
 import com.twelvebottles.neworemod.item.custom.ModArmorItem;
+import com.twelvebottles.neworemod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,6 +40,9 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.SABLONIUM, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.SABLONIUM, 0, -3.0f))));
 
+    public static final RegistryObject<Item> SABLONIUM_BOW = ITEMS.register("sablonium_bow",
+            () -> new BowItem(new Item.Properties().durability(650)));
+
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
 
@@ -62,6 +66,9 @@ public class ModItems {
     public static final RegistryObject<Item> SABLONIUM_HORSE_ARMOR = ITEMS.register("sablonium_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

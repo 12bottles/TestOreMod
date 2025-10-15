@@ -35,7 +35,7 @@ public class Transmutator extends Block {
     @Override
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if(pEntity instanceof ItemEntity itemEntity) {
-            if(isValidItem(itemEntity.getItem())) {
+            if(turnsToDiamond(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
 
@@ -47,7 +47,7 @@ public class Transmutator extends Block {
         super.stepOn(pLevel, pPos, pState, pEntity);
     }
 
-    private boolean isValidItem(ItemStack item) {
+    private boolean turnsToDiamond(ItemStack item) {
         return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
