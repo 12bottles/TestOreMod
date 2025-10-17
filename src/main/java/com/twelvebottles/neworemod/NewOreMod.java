@@ -4,8 +4,10 @@ import com.mojang.logging.LogUtils;
 import com.twelvebottles.neworemod.block.ModBlocks;
 import com.twelvebottles.neworemod.component.ModDataComponentTypes;
 import com.twelvebottles.neworemod.effect.ModEffects;
+import com.twelvebottles.neworemod.enchantment.ModEnchantmentEffects;
 import com.twelvebottles.neworemod.item.ModCreativeModeTabs;
 import com.twelvebottles.neworemod.item.ModItems;
+import com.twelvebottles.neworemod.potion.ModPotions;
 import com.twelvebottles.neworemod.sound.ModSounds;
 import com.twelvebottles.neworemod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -50,6 +52,9 @@ public class NewOreMod
         ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
 
         // Register the item to a creative tab

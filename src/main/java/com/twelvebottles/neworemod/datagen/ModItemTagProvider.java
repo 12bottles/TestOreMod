@@ -1,13 +1,11 @@
 package com.twelvebottles.neworemod.datagen;
 
 import com.twelvebottles.neworemod.NewOreMod;
-import com.twelvebottles.neworemod.block.ModBlocks;
 import com.twelvebottles.neworemod.item.ModItems;
 import com.twelvebottles.neworemod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;

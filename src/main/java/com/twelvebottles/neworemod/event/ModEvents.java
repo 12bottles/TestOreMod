@@ -4,6 +4,7 @@ import com.twelvebottles.neworemod.NewOreMod;
 import com.twelvebottles.neworemod.block.ModBlocks;
 import com.twelvebottles.neworemod.item.ModItems;
 import com.twelvebottles.neworemod.item.custom.HammerItem;
+import com.twelvebottles.neworemod.potion.ModPotions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -22,8 +23,11 @@ import net.minecraft.world.entity.monster.Endermite;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.brewing.BrewingRecipeRegisterEvent;
 import net.minecraftforge.event.entity.SpawnPlacementRegisterEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -136,5 +140,12 @@ public class ModEvents {
 
     public void spawnAnimal(Animal animal) {
 
+    }
+
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(BrewingRecipeRegisterEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.OOZING, Items.FERMENTED_SPIDER_EYE, ModPotions.SLIMEY_POTION.getHolder().get());
     }
 }

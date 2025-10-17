@@ -56,7 +56,31 @@
   "block.neworemod.sablonium_lamp": "Sablonium Lamp",
 
 
+
+  "enchantment.neworemod.lightning_striker": "Lightning Striker",
+
+
+
+
+
   "effect.neworemod.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.slimey_potion_12b":  "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion_12b":  "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion_12b":  "Slimey Lingering Potion",
+
+
+
+  "painting.neworemod.tower.title": "Tower",
+  "painting.neworemod.tower.author": "12bottles",
+
+
+  "painting.neworemod.world.title": "World",
+  "painting.neworemod.world.author": "NanoAttack",
+  "painting.neworemod.shrimp.title": "Shrimp",
+  "painting.neworemod.shrimp.author": "NanoAttack",
+  "painting.neworemod.saw_them.title": "Saw Them",
+  "painting.neworemod.saw_them.author": "NanoAttack",
 
 
 

@@ -1,8 +1,7 @@
 package com.twelvebottles.neworemod.datagen;
 
 import com.twelvebottles.neworemod.NewOreMod;
-// import com.twelvebottles.neworemod.trim.ModTrimMaterials;
-// import com.twelvebottles.neworemod.trim.ModTrimPatterns;
+import com.twelvebottles.neworemod.enchantment.ModEnchantments;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -14,8 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-    //        .add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap)
-    //        .add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap)
+            .add(Registries.ENCHANTMENT, ModEnchantments::bootstrap)
                 ;
 
 

@@ -24,4 +24,6 @@ public class ModEffects {
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }
+
+
 }
