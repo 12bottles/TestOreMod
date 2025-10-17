@@ -2,6 +2,7 @@ package com.twelvebottles.neworemod.enchantment;
 
 import com.mojang.serialization.MapCodec;
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.enchantment.custom.FireballEnchantmentEffect;
 import com.twelvebottles.neworemod.enchantment.custom.LightningStrikerEnchantmentEffect;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.enchantment.effects.EnchantmentEntityEffect;
@@ -15,6 +16,9 @@ public class ModEnchantmentEffects {
 
     public static final RegistryObject<MapCodec<? extends EnchantmentEntityEffect>> LIGHTNING_STRIKER =
             ENTITY_ENCHANTMENT_EFFECTS.register("lightning_striker", () -> LightningStrikerEnchantmentEffect.CODEC);
+
+    public static final RegistryObject<MapCodec<? extends EnchantmentEntityEffect>> FIREBALL =
+            ENTITY_ENCHANTMENT_EFFECTS.register("fireball", () -> FireballEnchantmentEffect.CODEC);
 
 
     public static void register(IEventBus eventBus) {

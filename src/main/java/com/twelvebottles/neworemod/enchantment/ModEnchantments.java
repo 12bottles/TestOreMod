@@ -1,6 +1,7 @@
 package com.twelvebottles.neworemod.enchantment;
 
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.enchantment.custom.FireballEnchantmentEffect;
 import com.twelvebottles.neworemod.enchantment.custom.LightningStrikerEnchantmentEffect;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -16,6 +17,9 @@ import net.minecraft.world.item.enchantment.EnchantmentTarget;
 public class ModEnchantments {
     public static final ResourceKey<Enchantment> LIGHTNING_STRIKER = ResourceKey.create(Registries.ENCHANTMENT,
             ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "lightning_striker"));
+
+    public static final ResourceKey<Enchantment> FIREBALL = ResourceKey.create(Registries.ENCHANTMENT,
+            ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "fireball"));
 
     public static void bootstrap(BootstrapContext<Enchantment> context) {
         var enchantments = context.lookup(Registries.ENCHANTMENT);
@@ -33,6 +37,19 @@ public class ModEnchantments {
                 .exclusiveWith(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE))
                 .withEffect(EnchantmentEffectComponents.POST_ATTACK, EnchantmentTarget.ATTACKER,
                         EnchantmentTarget.VICTIM, new LightningStrikerEnchantmentEffect()));
+
+        register(context, FIREBALL, Enchantment.enchantment(Enchantment.definition(
+                        items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
+                        items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
+                        5,
+                        3,
+                        Enchantment.dynamicCost(5, 8),
+                        Enchantment.dynamicCost(25, 8),
+                        2,
+                        EquipmentSlotGroup.MAINHAND))
+                .exclusiveWith(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE))
+                .withEffect(EnchantmentEffectComponents.POST_ATTACK, EnchantmentTarget.ATTACKER,
+                        EnchantmentTarget.VICTIM, new FireballEnchantmentEffect()));
 
     }
 
