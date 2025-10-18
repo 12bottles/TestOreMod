@@ -2,6 +2,7 @@ package com.twelvebottles.neworemod.datagen;
 
 import com.twelvebottles.neworemod.NewOreMod;
 import com.twelvebottles.neworemod.block.ModBlocks;
+import com.twelvebottles.neworemod.block.custom.HoneyBerryBushBlock;
 import com.twelvebottles.neworemod.block.custom.KohlrabiCropBlock;
 import com.twelvebottles.neworemod.block.custom.SabloniumLampBlock;
 import net.minecraft.core.Direction;
@@ -10,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -66,8 +68,32 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop(((CropBlock) ModBlocks.KOHLRABI_CROP.get()), "kohlrabi_crop_stage", "kohlrabi_crop_stage");
 
+        makeBush(((SweetBerryBushBlock) ModBlocks.HONEY_BERRY_BUSH.get()), "honey_berry_bush_stage", "honey_berry_bush_stage");
+
 
     }
+
+
+
+
+
+
+    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(HoneyBerryBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "block/" + textureName + state.getValue(HoneyBerryBushBlock.AGE))).renderType("cutout"));
+
+        return models;
+    }
+
+
+
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
@@ -84,6 +110,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
 
+
+
+
+
+
     private void customLamp() {
         getVariantBuilder(ModBlocks.SABLONIUM_LAMP.get()).forAllStates(state -> {
             if (state.getValue(SabloniumLampBlock.CLICKED)) {
@@ -97,6 +128,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.SABLONIUM_LAMP.get(), models().cubeAll("sablonium_lamp_on",
                 ResourceLocation.fromNamespaceAndPath(NewOreMod.MOD_ID, "block/" + "sablonium_lamp_on")));
     }
+
+
+
+
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

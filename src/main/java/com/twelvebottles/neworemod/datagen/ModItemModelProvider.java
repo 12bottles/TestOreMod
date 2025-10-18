@@ -52,6 +52,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.KOHLRABI.get());
         basicItem(ModItems.KOHLRABI_SEEDS.get());
+        basicItem(ModItems.HONEY_BERRIES.get());
 
         basicItem(ModItems.SABLONIUM_HORSE_ARMOR.get());
 

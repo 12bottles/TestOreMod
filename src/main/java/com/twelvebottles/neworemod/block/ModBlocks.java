@@ -1,6 +1,7 @@
 package com.twelvebottles.neworemod.block;
 
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.block.custom.HoneyBerryBushBlock;
 import com.twelvebottles.neworemod.block.custom.KohlrabiCropBlock;
 import com.twelvebottles.neworemod.block.custom.SabloniumLampBlock;
 import com.twelvebottles.neworemod.block.custom.Transmutator;
@@ -89,6 +90,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> KOHLRABI_CROP = BLOCKS.register("kohlrabi_crop",
             () -> new KohlrabiCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> HONEY_BERRY_BUSH = BLOCKS.register("honey_berry_bush",
+            () -> new HoneyBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
 
     // BUFFER ROOM
