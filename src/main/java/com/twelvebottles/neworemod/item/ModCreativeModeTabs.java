@@ -55,6 +55,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.SABLONIUM_ORE.get());
                         output.accept(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.SABLONIUM_NETHER_ORE.get());
+                        output.accept(ModBlocks.SABLONIUM_END_ORE.get());
                         output.accept(ModBlocks.SABLONIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_SABLONIUM_BLOCK.get());
                         output.accept(ModBlocks.SABLONIUM_BRICKS.get());

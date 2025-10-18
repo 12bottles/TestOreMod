@@ -48,7 +48,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.SABLONIUM_ORE.get(), ModItems.RAW_SABLONIUM.get()));
         this.add(ModBlocks.SABLONIUM_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(
-                        ModBlocks.SABLONIUM_DEEPSLATE_ORE.get(), ModItems.RAW_SABLONIUM.get(), 2, 5));
+                        ModBlocks.SABLONIUM_DEEPSLATE_ORE.get(), ModItems.RAW_SABLONIUM.get(), 2, 4));
+
+        this.add(ModBlocks.SABLONIUM_NETHER_ORE.get(),
+                block -> createMultipleOreDrops(
+                        ModBlocks.SABLONIUM_NETHER_ORE.get(), ModItems.RAW_SABLONIUM.get(), 2, 5));
+        this.add(ModBlocks.SABLONIUM_END_ORE.get(),
+                block -> createMultipleOreDrops(
+                        ModBlocks.SABLONIUM_END_ORE.get(), ModItems.RAW_SABLONIUM.get(), 4, 8));
 
 
         dropSelf(ModBlocks.SABLONIUM_STAIRS.get());

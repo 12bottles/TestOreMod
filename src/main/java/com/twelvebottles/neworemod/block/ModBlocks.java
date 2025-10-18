@@ -33,6 +33,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SABLONIUM_DEEPSLATE_ORE = registerBlock("sablonium_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> SABLONIUM_NETHER_ORE = registerBlock("sablonium_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SABLONIUM_END_ORE = registerBlock("sablonium_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4, 8), BlockBehaviour.Properties.of()
+                    .strength(6f).requiresCorrectToolForDrops()));
+
+
     public static final RegistryObject<Block> SABLONIUM_BLOCK = registerBlock("sablonium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));

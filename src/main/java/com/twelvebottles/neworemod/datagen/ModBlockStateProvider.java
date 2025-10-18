@@ -34,6 +34,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.SABLONIUM_ORE);
         blockWithItem(ModBlocks.SABLONIUM_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.SABLONIUM_NETHER_ORE);
+        blockWithItem(ModBlocks.SABLONIUM_END_ORE);
 
         blockWithItem(ModBlocks.SABLONIUM_BRICKS);
 
