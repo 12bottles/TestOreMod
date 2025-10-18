@@ -6,6 +6,13 @@
   "item.neworemod.sablonium_ingot": "Sablonium Ingot",
   "item.neworemod.raw_sablonium": "Raw Sablonium",
 
+  "item.neworemod.sablonium_coal": "Sablonium Coal",
+
+  "item.neworemod.kohlrabi": "Kohlrabi",
+  "item.neworemod.kohlrabi_seeds": "Kohlrabi Seeds",
+  "block.neworemod.kohlrabi_crop": "Kohlrabi Crop",
+
+
   "item.neworemod.sablonium_sword": "Sablonium Sword",
   "item.neworemod.sablonium_pickaxe": "Sablonium Pickaxe",
   "item.neworemod.sablonium_shovel": "Sablonium Shovel",
@@ -17,8 +24,8 @@
   "item.neworemod.chisel": "Chisel",
 
   "item.neworemod.sablonium_hammer": "Sablonium Hammer",
-
   "block.neworemod.sablonium_core": "Sablonium Core",
+
 
   "item.neworemod.sablonium_helmet": "Sablonium Helmet",
   "item.neworemod.sablonium_chestplate": "Sablonium Chestplate",
@@ -27,8 +34,10 @@
 
   "item.neworemod.sablonium_horse_armor": "Sablonium Horse Armour",
 
+
   "item.neworemod.bar_brawl_music_disc": "Music Disc (TEMP)",
   "item.neworemod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
 
   "block.neworemod.sablonium_ore": "Sablonium Ore",
   "block.neworemod.sablonium_deepslate_ore": "Sablonium Deepslate Ore",

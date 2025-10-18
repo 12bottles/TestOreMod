@@ -48,6 +48,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SABLONIUM_INGOT.get());
         basicItem(ModItems.RAW_SABLONIUM.get());
 
+        basicItem(ModItems.SABLONIUM_COAL.get());
+
+        basicItem(ModItems.KOHLRABI.get());
+        basicItem(ModItems.KOHLRABI_SEEDS.get());
+
         basicItem(ModItems.SABLONIUM_HORSE_ARMOR.get());
 
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());

@@ -1,6 +1,7 @@
 package com.twelvebottles.neworemod.block;
 
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.block.custom.KohlrabiCropBlock;
 import com.twelvebottles.neworemod.block.custom.SabloniumLampBlock;
 import com.twelvebottles.neworemod.block.custom.Transmutator;
 import com.twelvebottles.neworemod.item.ModItems;
@@ -68,6 +69,8 @@ public class ModBlocks {
     public static final RegistryObject<TrapDoorBlock> SABLONIUM_TRAPDOOR = registerBlock("sablonium_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
+
+
     // Custom Blocks
 
     public static final RegistryObject<Block> TRANSMUTATOR = registerBlock("transmutator",
@@ -81,6 +84,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> SABLONIUM_CORE = registerBlock("sablonium_core",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(7f).requiresCorrectToolForDrops().sound(SoundType.HEAVY_CORE)));
+
+    // Crops & Misc.
+
+    public static final RegistryObject<Block> KOHLRABI_CROP = BLOCKS.register("kohlrabi_crop",
+            () -> new KohlrabiCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
 
     // BUFFER ROOM

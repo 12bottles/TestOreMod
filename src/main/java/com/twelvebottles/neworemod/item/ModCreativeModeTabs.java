@@ -24,6 +24,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_SABLONIUM.get());
 
 
+                        output.accept(ModItems.SABLONIUM_COAL.get());
+
+
                         output.accept(ModItems.SABLONIUM_SWORD.get());
                         output.accept(ModItems.SABLONIUM_PICKAXE.get());
                         output.accept(ModItems.SABLONIUM_AXE.get());
@@ -82,6 +85,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TRANSMUTATOR.get());
 
                         output.accept(ModBlocks.SABLONIUM_CORE.get());
+
+                        output.accept(ModItems.KOHLRABI.get());
+                        output.accept(ModItems.KOHLRABI_SEEDS.get());
 
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 

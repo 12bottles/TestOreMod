@@ -1,7 +1,9 @@
 package com.twelvebottles.neworemod.item;
 
 import com.twelvebottles.neworemod.NewOreMod;
+import com.twelvebottles.neworemod.block.ModBlocks;
 import com.twelvebottles.neworemod.item.custom.ChiselItem;
+import com.twelvebottles.neworemod.item.custom.FuelItem;
 import com.twelvebottles.neworemod.item.custom.HammerItem;
 import com.twelvebottles.neworemod.item.custom.ModArmorItem;
 import com.twelvebottles.neworemod.sound.ModSounds;
@@ -67,8 +69,21 @@ public class ModItems {
             () -> new AnimalArmorItem(ModArmorMaterials.SABLONIUM_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> SABLONIUM_COAL = ITEMS.register("sablonium_coal",
+            () -> new FuelItem(new Item.Properties(), 1200));
+
+
+
+    public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
+
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
+
+
+    public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
