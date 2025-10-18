@@ -21,6 +21,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
+
+
+        // -----------------------
+        // --- General Recipes ---
+        // -----------------------
+
         List<ItemLike> SABLONIUM_SMELTABLES = List.of(ModItems.RAW_SABLONIUM.get(),
                 ModBlocks.SABLONIUM_ORE.get(), ModBlocks.SABLONIUM_DEEPSLATE_ORE.get());
 
@@ -31,11 +37,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.SABLONIUM_INGOT.get())
                 .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
 
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SABLONIUM_BRICKS.get(), 4)
                 .pattern("AA")
                 .pattern("AA")
                 .define('A', ModItems.SABLONIUM_INGOT.get())
                 .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SABLONIUM_INGOT.get(), 9)
                 .requires(ModBlocks.SABLONIUM_BLOCK.get())
@@ -81,14 +90,91 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SABLONIUM_HAMMER.get())
+        // -------------------------------
+        // --- Tools and Armo(u)r sets ---
+        // -------------------------------
+
+        // --- SABLONIUM ---
+
+        // Sablonium Armo(u)r
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SABLONIUM_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SABLONIUM_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SABLONIUM_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SABLONIUM_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        // Sablonium Tools
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SABLONIUM_SWORD.get())
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SABLONIUM_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SABLONIUM_AXE.get())
+                .pattern("AA")
+                .pattern("AB")
+                .pattern(" B")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SABLONIUM_SHOVEL.get())
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SABLONIUM_HOE.get())
+                .pattern("AA")
+                .pattern(" B")
+                .pattern(" B")
+                .define('A', ModItems.SABLONIUM_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SABLONIUM_INGOT.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
+
+        // Sablonium Exotic Tools
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SABLONIUM_HAMMER.get())
                 .pattern("  B")
                 .pattern(" A ")
                 .pattern("A  ")
                 .define('A', Items.STICK)
                 .define('B', ModBlocks.SABLONIUM_CORE.get())
                 .unlockedBy(getHasName(ModBlocks.SABLONIUM_CORE.get()), has(ModItems.SABLONIUM_INGOT.get())).save(pRecipeOutput);
-
 
 
     }
@@ -112,4 +198,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .save(recipeOutput, NewOreMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }
+
 }
