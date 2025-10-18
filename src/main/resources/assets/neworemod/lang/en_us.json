@@ -76,13 +76,14 @@
   "painting.neworemod.tower.title": "Tower",
   "painting.neworemod.tower.author": "12bottles",
 
+  "painting.neworemod.slime.title": "Slime",
+  "painting.neworemod.slime.author": "12bottles",
+  "painting.neworemod.home.title": "Home",
+  "painting.neworemod.home.author": "12bottles",
+  "painting.neworemod.north.title": "North",
+  "painting.neworemod.north.author": "12bottles",
 
-  "painting.neworemod.world.title": "World",
-  "painting.neworemod.world.author": "NanoAttack",
-  "painting.neworemod.shrimp.title": "Shrimp",
-  "painting.neworemod.shrimp.author": "NanoAttack",
-  "painting.neworemod.saw_them.title": "Saw Them",
-  "painting.neworemod.saw_them.author": "NanoAttack",
+
 
 
 
@@ -93,7 +94,10 @@
 
 
 
-
+  "painting.neworemod.shrimp.title": "Shrimp",
+  "painting.neworemod.shrimp.author": "NanoAttack",
+  "painting.neworemod.saw_them.title": "Saw Them",
+  "painting.neworemod.saw_them.author": "NanoAttack",
 
   "item.neworemod.alexandrite": "Alexandrite Gem",
   "item.neworemod.raw_alexandrite": "Raw Alexandrite",

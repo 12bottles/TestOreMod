@@ -2,7 +2,10 @@
   "values": [
     "neworemod:shrimp",
     "neworemod:saw_them",
-    "neworemod:world",
-    "neworemod:tower"
+
+    "neworemod:slime",
+    "neworemod:tower",
+    "neworemod:home",
+    "neworemod:north"
   ]
 }
